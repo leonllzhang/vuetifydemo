@@ -178,7 +178,7 @@
           <div>
             <span class="grey--text"  v-text="card.title"></span><br>
             <span v-text="card.text"></span><br>
-            <span v-text="card.text"></span>
+            <v-rating v-model="card.rating"></v-rating>
           </div>
         </v-card-title>
                 <v-card-actions>
@@ -334,9 +334,9 @@
       mini:true,
 
       cards: [
-        { title: 'Pre-fab homes', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 12, text:'Whitsunday Island, Whitsunday Islands' },
-        { title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6,text:'Listen to your favorite artists and albums whenever and wherever, online and offline.' },
-        { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6,text:'Ellie Goulding(2013)' }
+        { title: 'Pre-fab homes', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 12, text:'Whitsunday Island, Whitsunday Islands',rating:5 },
+        { title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6,text:'Listen to your favorite artists and albums whenever and wherever, online and offline.',rating:4 },
+        { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6,text:'Ellie Goulding(2013)' ,rating:3}
       ]
     }),
     props: {
